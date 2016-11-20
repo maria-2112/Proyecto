@@ -1,0 +1,9 @@
+C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\obj\Debug\Capa_Datos.vbprojResolveAssemblyReference.cache
+C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\obj\Debug\Capa_Datos.Resources.resources
+C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\obj\Debug\Capa_Datos.vbproj.GenerateResource.Cache
+C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\obj\Debug\Capa_Datos.xml
+C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\bin\Debug\Capa_Datos.xml
+C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\obj\Debug\Capa_Datos.pdb
