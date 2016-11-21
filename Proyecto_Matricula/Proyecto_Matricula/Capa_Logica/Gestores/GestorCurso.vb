@@ -17,6 +17,7 @@ Public Class GestorCurso
         Catch ex As Exception
             Throw ex
         End Try
+
     End Sub
 
     Public Shared Function ObtenerCursos() As List(Of DCurso)

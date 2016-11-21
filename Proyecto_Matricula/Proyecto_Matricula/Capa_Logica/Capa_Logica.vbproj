@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Gestores\GestorCurso.vb" />
+    <Compile Include="Gestores\GestorDetalleCuota.vb" />
     <Compile Include="Gestores\GestorEstudiante.vb" />
     <Compile Include="Gestores\GestorHorario.vb" />
     <Compile Include="Gestores\GestorMatricula.vb" />
