@@ -76,6 +76,12 @@
     <Compile Include="Enlaces\MenuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Mantenimientos\frmMantenimientoCurso.Designer.vb">
+      <DependentUpon>frmMantenimientoCurso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\frmMantenimientoCurso.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PantallaLogin.Designer.vb">
       <DependentUpon>PantallaLogin.vb</DependentUpon>
     </Compile>
@@ -101,6 +107,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Enlaces\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frmMantenimientoCurso.resx">
+      <DependentUpon>frmMantenimientoCurso.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -134,9 +143,7 @@
       <Name>Capa_Logica</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Mantenimientos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

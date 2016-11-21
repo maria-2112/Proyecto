@@ -1,7 +1,7 @@
 ﻿Public Class DEstudiante
 
     Dim _idest, _idtipo As Integer
-    Dim _nombres, _apellidos, _direccion, _telefono, _cedula As String
+    Dim _nombres, _apellidos, _direccion, _telefono, _cedula, _email As String
     Dim _fechaNacimien As Date
 
 
@@ -79,19 +79,33 @@
         End Set
     End Property
 
+    Public Property Email
+        Get
+            Return _email
+
+        End Get
+        Set(ByVal value)
+            _email = value
+        End Set
+    End Property
+
+   
+
     'constructores
 
     Public Sub New()
 
     End Sub
 
-    Public Sub New(ByVal id As Integer, ByVal nom As String, ByVal apel As String, ByVal direc As String, ByVal tel As String, ByVal dni As String)
-        'IDcliente = id
+    Public Sub New(ByVal id As Integer, ByVal nom As String, ByVal apel As String, ByVal direc As String, ByVal tel As String, ByVal dni As String, ByVal email As String)
+        IDEstudiante = id
         Nombres = nom
         Apellidos = apel
         Direccion = direc
         Telefono = tel
         Cedula = dni
+
+
 
     End Sub
 

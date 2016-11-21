@@ -16,3 +16,22 @@ C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_M
 C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.exe
 C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.pdb
 C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.PantallaLogin.resources
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\bin\Debug\Capa_Presentacion.exe.config
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.exe
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.xml
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.pdb
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\bin\Debug\Capa_Presentacion.exe
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\bin\Debug\Capa_Presentacion.pdb
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\bin\Debug\Capa_Presentacion.xml
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\bin\Debug\Capa_Datos.dll
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\bin\Debug\Capa_Logica.dll
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\bin\Debug\Capa_Datos.pdb
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\bin\Debug\Capa_Datos.xml
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\bin\Debug\Capa_Logica.pdb
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\bin\Debug\Capa_Logica.xml
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.vbprojResolveAssemblyReference.cache
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.MenuPrincipal.resources
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.frmMantenimientoCurso.resources
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.Resources.resources
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.PantallaLogin.resources
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.vbproj.GenerateResource.Cache

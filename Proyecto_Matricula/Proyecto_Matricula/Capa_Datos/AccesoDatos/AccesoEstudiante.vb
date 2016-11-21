@@ -40,6 +40,7 @@ Public Class AccesoEstudiante
             cmd.Parameters.AddWithValue("@DIRECCION", obj.Direccion)
             cmd.Parameters.AddWithValue("@TELEFONO", obj.Telefono)
             cmd.Parameters.AddWithValue("@CEDULA", obj.Cedula)
+            cmd.Parameters.AddWithValue("         ", obj.Email)
             cmd.Parameters.AddWithValue("@FECHA_NAC", obj.FechaNac)
             cmd.Parameters.AddWithValue("@ID_TIPO_ESTUDIANTE", obj.IDTipoEstudiante)
 
@@ -65,6 +66,7 @@ Public Class AccesoEstudiante
             cmd.Parameters.AddWithValue("@DIRECCION", obj.Direccion)
             cmd.Parameters.AddWithValue("@TELEFONO", obj.Telefono)
             cmd.Parameters.AddWithValue("@CEDULA", obj.Cedula)
+            cmd.Parameters.AddWithValue("         ", obj.Email)
             cmd.Parameters.AddWithValue("@FECHA_NAC", obj.FechaNac)
             cmd.Parameters.AddWithValue("@ID_TIPO_ESTUDIANTE", obj.IDTipoEstudiante)
 

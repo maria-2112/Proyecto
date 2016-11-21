@@ -2,7 +2,7 @@
 
 Public Class Configuracion
     Public Shared cnn As New SqlConnection
-    Shared _cadenaConexion As String = "Data Source=JAVIERSP\SQL_JAVIERSP;Initial Catalog=DBMATRICULA;Integrated Security=True"
+    Shared _cadenaConexion As String = "Data Source=(local);Initial Catalog=DBMATRICULA;Integrated Security=True"
     Public Shared ReadOnly Property CadenaConexion() As String
         Get
             Return _cadenaConexion

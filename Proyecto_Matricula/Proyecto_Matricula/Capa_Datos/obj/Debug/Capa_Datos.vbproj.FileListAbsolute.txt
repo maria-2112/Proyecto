@@ -7,3 +7,12 @@ C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_M
 C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\bin\Debug\Capa_Datos.xml
 C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\obj\Debug\Capa_Datos.dll
 C:\Users\Javier\Desktop\Examen programacion 4 matricula\Todo lo nuevo\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\obj\Debug\Capa_Datos.pdb
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\obj\Debug\Capa_Datos.vbprojResolveAssemblyReference.cache
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\obj\Debug\Capa_Datos.Resources.resources
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\obj\Debug\Capa_Datos.vbproj.GenerateResource.Cache
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\obj\Debug\Capa_Datos.xml
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\obj\Debug\Capa_Datos.pdb
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Datos\bin\Debug\Capa_Datos.xml
