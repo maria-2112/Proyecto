@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoDatos\AccesoCurso.vb" />
+    <Compile Include="AccesoDatos\AccesoDetalleCuota.vb" />
     <Compile Include="AccesoDatos\AccesoEstudiante.vb" />
     <Compile Include="AccesoDatos\AccesoHorarios.vb" />
     <Compile Include="AccesoDatos\AccesoMatricula.vb" />
