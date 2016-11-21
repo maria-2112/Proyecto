@@ -35,3 +35,4 @@ C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Mat
 C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.Resources.resources
 C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.PantallaLogin.resources
 C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.vbproj.GenerateResource.Cache
+C:\Users\MARIAFERNANDA\Documents\GitHub\Proyecto\Proyecto_Matricula\Proyecto_Matricula\Capa_Presentacion\obj\Debug\Capa_Presentacion.frmEstudiante.resources

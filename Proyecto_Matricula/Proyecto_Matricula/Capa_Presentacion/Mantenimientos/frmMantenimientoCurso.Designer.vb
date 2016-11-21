@@ -33,7 +33,6 @@ Partial Class frmMantenimientoCurso
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtcosto = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtcupo = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtdesccripcion = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -50,6 +49,8 @@ Partial Class frmMantenimientoCurso
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.Eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.cbmSede = New System.Windows.Forms.ComboBox()
+        Me.txtflag = New System.Windows.Forms.TextBox()
+        Me.txtcupo = New System.Windows.Forms.MaskedTextBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -70,6 +71,7 @@ Partial Class frmMantenimientoCurso
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.txtflag)
         Me.TabPage1.Controls.Add(Me.GroupBox2)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
@@ -92,6 +94,7 @@ Partial Class frmMantenimientoCurso
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtcupo)
         Me.GroupBox1.Controls.Add(Me.cbmSede)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.Label7)
@@ -101,7 +104,6 @@ Partial Class frmMantenimientoCurso
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.txtcosto)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.txtcupo)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.txtdesccripcion)
         Me.GroupBox1.Controls.Add(Me.Label2)
@@ -128,13 +130,13 @@ Partial Class frmMantenimientoCurso
         '
         'btnguardar
         '
-        Me.btnguardar.BackColor = System.Drawing.Color.ForestGreen
+        Me.btnguardar.BackColor = System.Drawing.Color.DarkCyan
         Me.btnguardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnguardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnguardar.ForeColor = System.Drawing.Color.White
-        Me.btnguardar.Location = New System.Drawing.Point(188, 282)
+        Me.btnguardar.Location = New System.Drawing.Point(196, 314)
         Me.btnguardar.Name = "btnguardar"
-        Me.btnguardar.Size = New System.Drawing.Size(108, 30)
+        Me.btnguardar.Size = New System.Drawing.Size(108, 29)
         Me.btnguardar.TabIndex = 15
         Me.btnguardar.Text = "Guardar"
         Me.btnguardar.UseVisualStyleBackColor = False
@@ -154,13 +156,13 @@ Partial Class frmMantenimientoCurso
         '
         'btnnuevo
         '
-        Me.btnnuevo.BackColor = System.Drawing.Color.ForestGreen
+        Me.btnnuevo.BackColor = System.Drawing.Color.DarkCyan
         Me.btnnuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnnuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnnuevo.ForeColor = System.Drawing.Color.White
-        Me.btnnuevo.Location = New System.Drawing.Point(29, 282)
+        Me.btnnuevo.Location = New System.Drawing.Point(37, 314)
         Me.btnnuevo.Name = "btnnuevo"
-        Me.btnnuevo.Size = New System.Drawing.Size(114, 30)
+        Me.btnnuevo.Size = New System.Drawing.Size(114, 29)
         Me.btnnuevo.TabIndex = 12
         Me.btnnuevo.Text = "Nuevo"
         Me.btnnuevo.UseVisualStyleBackColor = False
@@ -190,13 +192,6 @@ Partial Class frmMantenimientoCurso
         Me.Label4.Size = New System.Drawing.Size(40, 13)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Cupo:"
-        '
-        'txtcupo
-        '
-        Me.txtcupo.Location = New System.Drawing.Point(145, 194)
-        Me.txtcupo.Name = "txtcupo"
-        Me.txtcupo.Size = New System.Drawing.Size(139, 20)
-        Me.txtcupo.TabIndex = 6
         '
         'Label3
         '
@@ -246,18 +241,18 @@ Partial Class frmMantenimientoCurso
         Me.txtidCurso.Enabled = False
         Me.txtidCurso.Location = New System.Drawing.Point(145, 34)
         Me.txtidCurso.Name = "txtidCurso"
-        Me.txtidCurso.Size = New System.Drawing.Size(279, 20)
+        Me.txtidCurso.Size = New System.Drawing.Size(100, 20)
         Me.txtidCurso.TabIndex = 0
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.ForestGreen
+        Me.Button1.BackColor = System.Drawing.Color.DarkCyan
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(354, 282)
+        Me.Button1.Location = New System.Drawing.Point(362, 314)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(114, 30)
+        Me.Button1.Size = New System.Drawing.Size(114, 29)
         Me.Button1.TabIndex = 29
         Me.Button1.Text = "Editar"
         Me.Button1.UseVisualStyleBackColor = False
@@ -291,7 +286,7 @@ Partial Class frmMantenimientoCurso
         '
         'btneliminar
         '
-        Me.btneliminar.BackColor = System.Drawing.Color.ForestGreen
+        Me.btneliminar.BackColor = System.Drawing.Color.DarkCyan
         Me.btneliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btneliminar.ForeColor = System.Drawing.Color.White
@@ -357,6 +352,24 @@ Partial Class frmMantenimientoCurso
         Me.cbmSede.Size = New System.Drawing.Size(279, 21)
         Me.cbmSede.TabIndex = 30
         '
+        'txtflag
+        '
+        Me.txtflag.Location = New System.Drawing.Point(652, 6)
+        Me.txtflag.Name = "txtflag"
+        Me.txtflag.Size = New System.Drawing.Size(20, 20)
+        Me.txtflag.TabIndex = 5
+        Me.txtflag.Text = "0"
+        Me.txtflag.Visible = False
+        '
+        'txtcupo
+        '
+        Me.txtcupo.Location = New System.Drawing.Point(145, 194)
+        Me.txtcupo.Mask = "99999"
+        Me.txtcupo.Name = "txtcupo"
+        Me.txtcupo.Size = New System.Drawing.Size(100, 20)
+        Me.txtcupo.TabIndex = 31
+        Me.txtcupo.ValidatingType = GetType(Integer)
+        '
         'frmMantenimientoCurso
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -367,6 +380,7 @@ Partial Class frmMantenimientoCurso
         Me.Text = "frmMantenimientoCurso"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
+        Me.TabPage1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -396,7 +410,6 @@ Partial Class frmMantenimientoCurso
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txtcosto As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents txtcupo As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txtdesccripcion As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
@@ -404,4 +417,6 @@ Partial Class frmMantenimientoCurso
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtidCurso As System.Windows.Forms.TextBox
     Friend WithEvents cbmSede As System.Windows.Forms.ComboBox
+    Friend WithEvents txtflag As System.Windows.Forms.TextBox
+    Friend WithEvents txtcupo As System.Windows.Forms.MaskedTextBox
 End Class

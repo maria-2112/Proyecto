@@ -24,7 +24,7 @@ Public Class frmMantenimientoCurso
     Private Sub Mostrar()
         Try
 
-            dt = GestorCurso.ObtenerCursos()
+            dt = GestorCurso.ObtenerCurso()
 
 
             datalistado.Columns.Item("Eliminar").Visible = False
@@ -200,5 +200,11 @@ Public Class frmMantenimientoCurso
         End If
 
         Call Limpiar()
+    End Sub
+
+    Private Sub datalistado_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellDoubleClick
+        If txtflag.Text = "1" Then
+            'mas  tarde
+        End If
     End Sub
 End Class
