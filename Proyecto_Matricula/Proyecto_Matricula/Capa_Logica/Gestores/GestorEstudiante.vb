@@ -17,6 +17,12 @@ Public Class GestorEstudiante
         End Try
     End Sub
 
+    Public Shared Function ObtenerEstudiantes() As DataTable
+        Return AccesoEstudiante.ObtenerEstudiante()
+
+
+    End Function
+
     Public Shared Function ObtenerEstudiante() As List(Of DEstudiante)
         Try
             Return MapperEstudiante.ObtenerEstudiantes(AccesoEstudiante.ObtenerEstudiante())

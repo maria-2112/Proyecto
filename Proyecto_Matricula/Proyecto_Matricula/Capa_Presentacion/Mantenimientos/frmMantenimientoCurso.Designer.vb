@@ -24,8 +24,19 @@ Partial Class frmMantenimientoCurso
     Private Sub InitializeComponent()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.txtflag = New System.Windows.Forms.TextBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.cbeliminar = New System.Windows.Forms.CheckBox()
+        Me.btneliminar = New System.Windows.Forms.Button()
+        Me.inexistente = New System.Windows.Forms.LinkLabel()
+        Me.txtbuscar = New System.Windows.Forms.TextBox()
+        Me.cbocampo = New System.Windows.Forms.ComboBox()
+        Me.datalistado = New System.Windows.Forms.DataGridView()
+        Me.Eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbmSede = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btnguardar = New System.Windows.Forms.Button()
         Me.btneditar = New System.Windows.Forms.Button()
@@ -39,24 +50,13 @@ Partial Class frmMantenimientoCurso
         Me.txtnombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtidCurso = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.cbeliminar = New System.Windows.Forms.CheckBox()
-        Me.btneliminar = New System.Windows.Forms.Button()
-        Me.inexistente = New System.Windows.Forms.LinkLabel()
-        Me.txtbuscar = New System.Windows.Forms.TextBox()
-        Me.cbocampo = New System.Windows.Forms.ComboBox()
-        Me.datalistado = New System.Windows.Forms.DataGridView()
-        Me.Eliminar = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.cbmSede = New System.Windows.Forms.ComboBox()
-        Me.txtflag = New System.Windows.Forms.TextBox()
-        Me.txtcupo = New System.Windows.Forms.MaskedTextBox()
+        Me.txtcupo = New System.Windows.Forms.TextBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -80,6 +80,102 @@ Partial Class frmMantenimientoCurso
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Listado de Cursos"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'txtflag
+        '
+        Me.txtflag.Location = New System.Drawing.Point(652, 6)
+        Me.txtflag.Name = "txtflag"
+        Me.txtflag.Size = New System.Drawing.Size(20, 20)
+        Me.txtflag.TabIndex = 5
+        Me.txtflag.Text = "0"
+        Me.txtflag.Visible = False
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.cbeliminar)
+        Me.GroupBox2.Controls.Add(Me.btneliminar)
+        Me.GroupBox2.Controls.Add(Me.inexistente)
+        Me.GroupBox2.Controls.Add(Me.txtbuscar)
+        Me.GroupBox2.Controls.Add(Me.cbocampo)
+        Me.GroupBox2.Controls.Add(Me.datalistado)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.ForeColor = System.Drawing.Color.CadetBlue
+        Me.GroupBox2.Location = New System.Drawing.Point(27, 16)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(619, 388)
+        Me.GroupBox2.TabIndex = 28
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Listado de Cursos"
+        '
+        'cbeliminar
+        '
+        Me.cbeliminar.AutoSize = True
+        Me.cbeliminar.Location = New System.Drawing.Point(13, 60)
+        Me.cbeliminar.Name = "cbeliminar"
+        Me.cbeliminar.Size = New System.Drawing.Size(70, 17)
+        Me.cbeliminar.TabIndex = 16
+        Me.cbeliminar.Text = "Eliminar"
+        Me.cbeliminar.UseVisualStyleBackColor = True
+        '
+        'btneliminar
+        '
+        Me.btneliminar.BackColor = System.Drawing.Color.DarkCyan
+        Me.btneliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btneliminar.ForeColor = System.Drawing.Color.White
+        Me.btneliminar.Location = New System.Drawing.Point(98, 52)
+        Me.btneliminar.Name = "btneliminar"
+        Me.btneliminar.Size = New System.Drawing.Size(67, 25)
+        Me.btneliminar.TabIndex = 15
+        Me.btneliminar.Text = "Eliminar"
+        Me.btneliminar.UseVisualStyleBackColor = False
+        '
+        'inexistente
+        '
+        Me.inexistente.AutoSize = True
+        Me.inexistente.Location = New System.Drawing.Point(192, 213)
+        Me.inexistente.Name = "inexistente"
+        Me.inexistente.Size = New System.Drawing.Size(93, 13)
+        Me.inexistente.TabIndex = 3
+        Me.inexistente.TabStop = True
+        Me.inexistente.Text = "Datos inexistes"
+        '
+        'txtbuscar
+        '
+        Me.txtbuscar.Location = New System.Drawing.Point(178, 25)
+        Me.txtbuscar.Name = "txtbuscar"
+        Me.txtbuscar.Size = New System.Drawing.Size(268, 20)
+        Me.txtbuscar.TabIndex = 2
+        '
+        'cbocampo
+        '
+        Me.cbocampo.FormattingEnabled = True
+        Me.cbocampo.Items.AddRange(New Object() {"NOMBRE"})
+        Me.cbocampo.Location = New System.Drawing.Point(13, 25)
+        Me.cbocampo.Name = "cbocampo"
+        Me.cbocampo.Size = New System.Drawing.Size(152, 21)
+        Me.cbocampo.TabIndex = 1
+        Me.cbocampo.Text = "NOMBRE"
+        '
+        'datalistado
+        '
+        Me.datalistado.AllowUserToAddRows = False
+        Me.datalistado.AllowUserToDeleteRows = False
+        Me.datalistado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eliminar})
+        Me.datalistado.Location = New System.Drawing.Point(26, 109)
+        Me.datalistado.Name = "datalistado"
+        Me.datalistado.ReadOnly = True
+        Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.datalistado.Size = New System.Drawing.Size(573, 248)
+        Me.datalistado.TabIndex = 0
+        '
+        'Eliminar
+        '
+        Me.Eliminar.HeaderText = "Eliminar"
+        Me.Eliminar.Name = "Eliminar"
+        Me.Eliminar.ReadOnly = True
         '
         'TabPage2
         '
@@ -118,6 +214,27 @@ Partial Class frmMantenimientoCurso
         Me.GroupBox1.TabIndex = 28
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mantenimiento Cursos"
+        '
+        'cbmSede
+        '
+        Me.cbmSede.FormattingEnabled = True
+        Me.cbmSede.Location = New System.Drawing.Point(145, 113)
+        Me.cbmSede.Name = "cbmSede"
+        Me.cbmSede.Size = New System.Drawing.Size(279, 21)
+        Me.cbmSede.TabIndex = 30
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.DarkCyan
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(362, 314)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(114, 29)
+        Me.Button1.TabIndex = 29
+        Me.Button1.Text = "Editar"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label7
         '
@@ -244,131 +361,13 @@ Partial Class frmMantenimientoCurso
         Me.txtidCurso.Size = New System.Drawing.Size(100, 20)
         Me.txtidCurso.TabIndex = 0
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.DarkCyan
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(362, 314)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(114, 29)
-        Me.Button1.TabIndex = 29
-        Me.Button1.Text = "Editar"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.cbeliminar)
-        Me.GroupBox2.Controls.Add(Me.btneliminar)
-        Me.GroupBox2.Controls.Add(Me.inexistente)
-        Me.GroupBox2.Controls.Add(Me.txtbuscar)
-        Me.GroupBox2.Controls.Add(Me.cbocampo)
-        Me.GroupBox2.Controls.Add(Me.datalistado)
-        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.ForeColor = System.Drawing.Color.CadetBlue
-        Me.GroupBox2.Location = New System.Drawing.Point(27, 16)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(619, 388)
-        Me.GroupBox2.TabIndex = 28
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Listado de productos"
-        '
-        'cbeliminar
-        '
-        Me.cbeliminar.AutoSize = True
-        Me.cbeliminar.Location = New System.Drawing.Point(13, 60)
-        Me.cbeliminar.Name = "cbeliminar"
-        Me.cbeliminar.Size = New System.Drawing.Size(70, 17)
-        Me.cbeliminar.TabIndex = 16
-        Me.cbeliminar.Text = "Eliminar"
-        Me.cbeliminar.UseVisualStyleBackColor = True
-        '
-        'btneliminar
-        '
-        Me.btneliminar.BackColor = System.Drawing.Color.DarkCyan
-        Me.btneliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btneliminar.ForeColor = System.Drawing.Color.White
-        Me.btneliminar.Location = New System.Drawing.Point(98, 52)
-        Me.btneliminar.Name = "btneliminar"
-        Me.btneliminar.Size = New System.Drawing.Size(67, 25)
-        Me.btneliminar.TabIndex = 15
-        Me.btneliminar.Text = "Eliminar"
-        Me.btneliminar.UseVisualStyleBackColor = False
-        '
-        'inexistente
-        '
-        Me.inexistente.AutoSize = True
-        Me.inexistente.Location = New System.Drawing.Point(192, 213)
-        Me.inexistente.Name = "inexistente"
-        Me.inexistente.Size = New System.Drawing.Size(93, 13)
-        Me.inexistente.TabIndex = 3
-        Me.inexistente.TabStop = True
-        Me.inexistente.Text = "Datos inexistes"
-        '
-        'txtbuscar
-        '
-        Me.txtbuscar.Location = New System.Drawing.Point(178, 25)
-        Me.txtbuscar.Name = "txtbuscar"
-        Me.txtbuscar.Size = New System.Drawing.Size(268, 20)
-        Me.txtbuscar.TabIndex = 2
-        '
-        'cbocampo
-        '
-        Me.cbocampo.FormattingEnabled = True
-        Me.cbocampo.Items.AddRange(New Object() {"NOMBRE"})
-        Me.cbocampo.Location = New System.Drawing.Point(13, 25)
-        Me.cbocampo.Name = "cbocampo"
-        Me.cbocampo.Size = New System.Drawing.Size(152, 21)
-        Me.cbocampo.TabIndex = 1
-        Me.cbocampo.Text = "NOMBRE"
-        '
-        'datalistado
-        '
-        Me.datalistado.AllowUserToAddRows = False
-        Me.datalistado.AllowUserToDeleteRows = False
-        Me.datalistado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eliminar})
-        Me.datalistado.Location = New System.Drawing.Point(26, 109)
-        Me.datalistado.Name = "datalistado"
-        Me.datalistado.ReadOnly = True
-        Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(573, 248)
-        Me.datalistado.TabIndex = 0
-        '
-        'Eliminar
-        '
-        Me.Eliminar.HeaderText = "Eliminar"
-        Me.Eliminar.Name = "Eliminar"
-        Me.Eliminar.ReadOnly = True
-        '
-        'cbmSede
-        '
-        Me.cbmSede.FormattingEnabled = True
-        Me.cbmSede.Location = New System.Drawing.Point(145, 113)
-        Me.cbmSede.Name = "cbmSede"
-        Me.cbmSede.Size = New System.Drawing.Size(279, 21)
-        Me.cbmSede.TabIndex = 30
-        '
-        'txtflag
-        '
-        Me.txtflag.Location = New System.Drawing.Point(652, 6)
-        Me.txtflag.Name = "txtflag"
-        Me.txtflag.Size = New System.Drawing.Size(20, 20)
-        Me.txtflag.TabIndex = 5
-        Me.txtflag.Text = "0"
-        Me.txtflag.Visible = False
-        '
         'txtcupo
         '
         Me.txtcupo.Location = New System.Drawing.Point(145, 194)
-        Me.txtcupo.Mask = "99999"
+        Me.txtcupo.MaxLength = 2
         Me.txtcupo.Name = "txtcupo"
         Me.txtcupo.Size = New System.Drawing.Size(100, 20)
-        Me.txtcupo.TabIndex = 31
-        Me.txtcupo.ValidatingType = GetType(Integer)
+        Me.txtcupo.TabIndex = 32
         '
         'frmMantenimientoCurso
         '
@@ -381,12 +380,12 @@ Partial Class frmMantenimientoCurso
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
-        Me.TabPage2.ResumeLayout(False)
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage2.ResumeLayout(False)
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -418,5 +417,5 @@ Partial Class frmMantenimientoCurso
     Friend WithEvents txtidCurso As System.Windows.Forms.TextBox
     Friend WithEvents cbmSede As System.Windows.Forms.ComboBox
     Friend WithEvents txtflag As System.Windows.Forms.TextBox
-    Friend WithEvents txtcupo As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents txtcupo As System.Windows.Forms.TextBox
 End Class

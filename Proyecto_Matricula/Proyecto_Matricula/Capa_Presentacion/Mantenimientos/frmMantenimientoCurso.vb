@@ -24,7 +24,8 @@ Public Class frmMantenimientoCurso
     Private Sub Mostrar()
         Try
 
-            dt = GestorCurso.ObtenerCurso()
+            dt = AccesoCurso.ObtenerCursos()
+
 
 
             datalistado.Columns.Item("Eliminar").Visible = False
@@ -81,6 +82,8 @@ Public Class frmMantenimientoCurso
     End Sub
     Private Sub btnnuevo_Click(sender As Object, e As EventArgs) Handles btnnuevo.Click
         Limpiar()
+        Mostrar()
+
     End Sub
 
     Private Sub frmMantenimientoCurso_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -98,8 +101,9 @@ Public Class frmMantenimientoCurso
                 obj.Cupo = txtcupo.Text
                 obj.Costo = txtcosto.Text
                 GestorCurso.InsertarCurso(obj)
-                MessageBox.Show("curso registrada correctamente", "Guardando registros", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("curso registrado correctamente", "Guardando registros", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Limpiar()
+                Mostrar()
             Catch ex As Exception
                 MsgBox(ex.Message)
             End Try
@@ -124,6 +128,7 @@ Public Class frmMantenimientoCurso
             If Me.ValidateChildren = True And txtnombre.Text <> "" And txtdesccripcion.Text <> "" And txtcupo.Text <> "" And txtcosto.Text <> "" Then
                 Try
                     Dim obj As New DCurso()
+                    obj.IDCurso = txtidCurso.Text
                     obj.Nombre = txtnombre.Text
                     obj.IDSede = cbmSede.SelectedItem("ID_SEDE").ToString()
                     obj.Descripcion = txtdesccripcion.Text
@@ -155,11 +160,11 @@ Public Class frmMantenimientoCurso
 
     Private Sub datalistado_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellClick
         txtidCurso.Text = datalistado.SelectedCells.Item(1).Value
-        txtnombre = datalistado.SelectedCells.Item(2).Value
-        txtdesccripcion = datalistado.SelectedCells.Item(3).Value
+        txtnombre.Text = datalistado.SelectedCells.Item(2).Value
+        txtdesccripcion.Text = datalistado.SelectedCells.Item(3).Value
         cbmSede.Text = datalistado.SelectedCells.Item(4).Value
-        txtcupo = datalistado.SelectedCells.Item(5).Value
-        txtcosto = datalistado.SelectedCells.Item(6).Value
+        txtcupo.Text = datalistado.SelectedCells.Item(5).Value
+        txtcosto.Text = datalistado.SelectedCells.Item(6).Value
     End Sub
 
     Private Sub datalistado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellContentClick
@@ -181,7 +186,7 @@ Public Class frmMantenimientoCurso
 
                     If marcado Then
                         Dim obj As New DCurso
-                        Dim id As Integer = Convert.ToInt32(row.Cells("idcategoria").Value)
+                        Dim id As Integer = Convert.ToInt32(row.Cells("ID_CURSO").Value)
                         obj.IDCurso = id
 
                         AccesoCurso.EliminarCurso(obj)
